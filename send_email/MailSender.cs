@@ -18,7 +18,7 @@ namespace VeryEmail.Controllers
 
         static async Task Execute(UserData address, Guid g)
         {
-            var apiKey = "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";//Environment.GetEnvironmentVariable("NAME_OF_THE_ENVIRONMENT_VARIABLE_FOR_YOUR_SENDGRID_KEY");
+            var apiKey = "<Enter you token here>";
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("test@example.com", "Example User");
             var subject = "Hello " + address.Name + " !";
